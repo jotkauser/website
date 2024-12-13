@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+body {
+	background-image: url("assets/background.png");
+	font-family: "Montserrat", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 200;
+	color: white;
+	background-position: center;
+	text-align: center;
+}
+
+.centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 30px;
+}
+
+.avatar {
+	width: 128px;
+	height: 128px;
+	border-radius: 50%;
+	margin-bottom: 10px;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
+}
+.header {
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
+}
+.link-button {
+	font-size: 24px;
+	color: white;
+	border: 0px;
+	border-radius: 20px;
+	background-color: transparent;
+	transition: color 0.3s ease-in-out;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
+}
+
+.link-button:hover {
+	color: #b5c9d8;
+	transition: color 0.3s ease-in-out
+}
+
+column {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.socials-button {
+	font-size: 36px;
+}
+.socials-icon {
+	width: 40px;
+	height: 40px;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
+	margin-right: 15px;
+}
+
+.socials {
+	margin-top: 10px;
+}
+
+.aboutme, .projects {
+	display: none;
+}
+
+.startpage-button {
+	margin-bottom: 10px;
+}
+
+project {
+	display: flex;
+	padding: 10px;
+}
+
+entry {
+	display: flex;
+	padding: 8px;
+}
+
+.entry-icon {
+	width: 40px;
+	height: 40px;
+	margin-right: 10px;
+}
+
+.project-icon {
+	width: 40px;
+	height: 40px;
+	margin-right: 10px;
+}

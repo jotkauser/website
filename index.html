@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="motylek's website as the title suggests">
+		<title>motylek's website</title>
+		<!-- styles -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"> 
+		<link rel="stylesheet" href="styles.css">
+		<!-- scripts -->
+		 <script src="script.js"></script>
+	</head>
+	<body>
+		<div class="centered">
+			<img class="avatar" src="assets/cat.png" alt="avatar">
+			<h1 class="header">motylek</h1>
+			<p class="header">Welcome!</p>
+			<hr>
+			<div class="startpage">
+				<column>
+					<button class="link-button" id="aboutme-button">
+						<entry>
+							<img class="entry-icon" src="assets/icons/about.svg" alt="abt">
+							<span>About me</span>
+						</entry>
+					</button>
+					<button class="link-button" id="projects-button">
+						<entry>
+							<img class="entry-icon" src="assets/icons/projects.svg" alt="projects">
+							<span>Projects</span>
+						</entry>
+					</button>
+					<button class="link-button" id="git-button">
+						<entry>
+							<img class="entry-icon" src="assets/icons/gitea.svg" alt="github">
+							<span>Git repository</span>
+						</entry>
+					</button>
+				</column>
+				<div class="socials">
+					<button class="link-button socials-button" id="socials-github">
+						<img class="socials-icon" src="assets/icons/github.svg" alt="github">
+					</button>
+					<button class="link-button socials-button" id="socials-telegram">
+						<img class="socials-icon" src="assets/icons/telegram.svg" alt="telegram">
+					</button>
+					<button class="link-button socials-button" id="socials-discord">
+						<img class="socials-icon" src="assets/icons/discord.svg" alt="discord">
+					</button>
+				</div>
+			</div>
+			<div class="aboutme">
+				<column>
+					<button class="link-button startpage-button" id="startpage">Go back</button>
+					<span>Hello, i live in Poland and i like programming, playing video games and tech.
+						<br>
+						My daily driver phone is a Xiaomi Mi 11.
+						<br>
+						Also i have a cat
+					</span>
+				</column>
+			</div>
+			<div class="projects">
+				<column>
+					<button class="link-button startpage-button" id="startpage">Go back</button>
+					<button class="link-button project">
+						<project>
+							<img class="project-icon" src="assets/icons/github.svg" alt="github">
+							<input type="hidden" class="project-url" value="https://github.com/jotkauser/website">
+							<span class="project-name">this website</span>
+						</project>
+					</button>
+					<button class="link-button project">
+						<project>
+							<img class="project-icon" src="assets/icons/github.svg" alt="github">
+							<input type="hidden" class="project-url" value="https://github.com/hypedevss/hebece">
+							<span class="project-name">hebece.js</span>
+						</project>
+					</button>
+					<button class="link-button project">
+						<project>
+							<img class="project-icon" src="assets/icons/github.svg" alt="github">
+							<input type="hidden" class="project-url" value="https://github.com/hypedevss/vulcanjs">
+							<span class="project-name">vulcanjs</span>
+						</project>
+					</button>
+					<button class="link-button project">
+						<project>
+							<img class="project-icon" src="assets/icons/github.svg" alt="github">
+							<input type="hidden" class="project-url" value="https://github.com/hypedevss/veribucore">
+							<span class="project-name">veribucore</span>
+						</project>
+					</button>
+				</column>
+			</div>
+		</div>
+	</body>
+</html>
