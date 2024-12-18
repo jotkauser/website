@@ -7,6 +7,8 @@ body {
 	color: white;
 	background-position: center;
 	text-align: center;
+	width: 100%;
+	height: 100%;
 }
 
 .centered {
@@ -91,4 +93,21 @@ entry {
 	width: 40px;
 	height: 40px;
 	margin-right: 10px;
+}
+
+/* mobile view optimiations */
+
+@media (max-width: 768px) {
+    .centered {
+		width: 100%;
+    }
+
+    .socials-button, .link-button {
+        font-size: 18px;
+	}
+    .entry-icon, .project-icon, .socials-icon {
+        width: 32px;
+        height: 32px;
+    }
+	
 }

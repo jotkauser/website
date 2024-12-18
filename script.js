@@ -5,6 +5,7 @@ window.onload = () => {
 	const socialsGithub = document.getElementById("socials-github");
 	const socialsTelegram = document.getElementById("socials-telegram");
 	const socialsDiscord = document.getElementById("socials-discord");
+	const socialsEmail = document.getElementById("socials-email");
 	const startpageButtons = document.getElementsByClassName("startpage-button");
 	const aboutme = document.getElementsByClassName("aboutme")[0];
 	const startpage = document.getElementsByClassName("startpage")[0];
@@ -54,6 +55,9 @@ window.onload = () => {
 	})
 	socialsDiscord.addEventListener("click", () => {
 		redirect("https://discord.com/users/1084489833117917254")
+	})
+	socialsEmail.addEventListener("click", () => {
+		redirect("mailto:me@motylek.ovh")
 	})
 }
 
