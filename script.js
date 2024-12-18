@@ -43,7 +43,7 @@ window.onload = () => {
 	}
 	// gitea button
 	gitButton.addEventListener("click", () => {
-		alert("coming soon")
+		redirect("https://git.motylek.ovh")
 	})
 
 	// socials
