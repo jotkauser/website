@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 body {
 	background: linear-gradient(670deg, rgba(15, 132, 223, 1), rgba(15, 104, 230, 1));
-	font-family: "Montserrat", sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-optical-sizing: auto;
 	font-weight: 200;
 	color: white;
@@ -41,7 +41,7 @@ body {
 
 .link-button:hover {
 	color: #b5c9d8;
-	transition: color 0.3s ease-in-out
+	transition: color 0.3s ease-in-out;
 }
 
 column {
@@ -65,7 +65,8 @@ column {
 	margin-top: 10px;
 }
 
-.aboutme, .projects {
+.aboutme,
+.projects {
 	display: none;
 }
 
@@ -98,16 +99,18 @@ entry {
 /* mobile view optimiations */
 
 @media (max-width: 768px) {
-    .centered {
+	.centered {
 		width: 100%;
-    }
-
-    .socials-button, .link-button {
-        font-size: 18px;
 	}
-    .entry-icon, .project-icon, .socials-icon {
-        width: 32px;
-        height: 32px;
-    }
-	
+
+	.socials-button,
+	.link-button {
+		font-size: 18px;
+	}
+	.entry-icon,
+	.project-icon,
+	.socials-icon {
+		width: 32px;
+		height: 32px;
+	}
 }

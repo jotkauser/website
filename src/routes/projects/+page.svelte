@@ -1,7 +1,7 @@
 <script>
-	import Header from "$lib/components/header.svelte";
-	import Goback from "$lib/components/goback.svelte";
-	import { projects } from "../../strings";
+	import Header from '$lib/components/header.svelte';
+	import Goback from '$lib/components/goback.svelte';
+	import { projects } from '../../strings';
 </script>
 
 <div class="centered">
@@ -10,9 +10,9 @@
 		<Goback />
 		{#each projects as project}
 			<project>
-				<a href="{project.link}">
+				<a href={project.link}>
 					<button class="link-button project">
-						<img class="project-icon" src="/assets/icons/github.svg" alt="github">
+						<img class="project-icon" src="/assets/icons/github.svg" alt="github" />
 						<span class="project-name">{project.name}</span>
 					</button>
 				</a>

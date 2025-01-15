@@ -1,5 +1,5 @@
 <script>
-	import { goback } from "$lib/paraglide/messages";
+	import { goback } from '$lib/paraglide/messages';
 </script>
 
 <a href="/">
