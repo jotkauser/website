@@ -6,3 +6,22 @@ export const socials = {
 }
 
 export const gitRepo = "https://git.motylek.ovh"
+
+export const projects = [
+	{
+		"name": "motylek.ovh",
+		"link": "https://github.com/jotkauser/website"
+	},
+	{
+		"name": "hebece.js",
+		"link": "https://github.com/hypedevss/hebece"
+	},
+	{
+		"name": "vulcanjs",
+		"link": "https://github.com/hypedevss/vulcanjs"
+	},
+	{
+		"name": "veribucore",
+		"link": "https://github.com/hypedevss/veribucore"
+	}
+]
