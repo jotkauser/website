@@ -1,8 +1,11 @@
 {
 	"$schema": "https://inlang.com/schema/inlang-message-format",
 	"title": "strona motylka",
+	"description": "strona motylka tak jak tytuł sugeruje",
 	"welcome": "Witaj!",
 	"about_me": "O mnie",
 	"projects": "Projekty",
-	"gitea": "Repozytorium Git"
+	"gitea": "Repozytorium Git",
+	"goback": "Wróć",
+	"about_text": "Cześć, żyje w Polsce i lubię programowanie, gry wideo i technologię.\nMój główny telefon to Xiaomi Mi 11\nNo i mam kota"
 }

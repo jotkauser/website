@@ -1,8 +1,11 @@
 {
 	"$schema": "https://inlang.com/schema/inlang-message-format",
 	"title": "motylek's website",
+	"description": "motylek's website as the title suggests",
 	"welcome": "Welcome!",
 	"about_me": "About me",
 	"projects": "Projects",
-	"gitea": "Git repository"
+	"gitea": "Git repository",
+	"goback": "Go back",
+	"about_text": "Hello, i live in poland and i like programming, playing video games and tech.\nMy daily driver phone is a Xiaomi Mi 11\nAlso i have a cat"
 }
