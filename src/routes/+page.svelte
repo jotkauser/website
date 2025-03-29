@@ -11,7 +11,7 @@
 	<div class="flex flex-col justify-center bg-card p-4 md:p-10 rounded-xl mx-5 sm:mx-auto max-w-3xl md:w-170">
 		<div>
 			<div class="flex flex-col sm:flex-row text-white items-center">
-				<img src="/assets/cat.png" alt="cat" class="w-20 h-20 sm:w-30 sm:h-30 rounded-full">
+				<img src="/assets/cat.png" alt="cat" class="w-20 h-20 sm:w-30 sm:h-30 rounded-full shadow-xl">
 				<div class="flex-col mt-4 sm:mt-0 sm:ml-6 md:ml-10 text-center sm:text-left">
 					<h1 class="text-3xl sm:text-5xl">hi! i'm motylek</h1>
 					<span class="text-sm sm:text-base">Welcome to my <del>crappy</del> website</span>
