@@ -1,0 +1,27 @@
+@import 'tailwindcss';
+
+body {
+	background-color: #06161f;
+	font-family: "Courier New", Courier, monospace;
+}
+
+.bg-card {
+	background-color: #232526;
+}
+
+.bg-card-hover {
+	background-color: #36393b;
+}
+
+.selected {
+	border-bottom: 2px solid #4c5052;
+}
+
+a:hover {
+	color: #4c5052;
+	transition: all 0.2s ease-in-out;
+}
+
+a {
+	transition: all 0.2s ease-in-out;
+}
