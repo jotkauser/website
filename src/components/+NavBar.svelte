@@ -26,7 +26,7 @@
 		isDropdownOpen.set(!$isDropdownOpen);
 	}
 </script>
-<div class="text-white bg-card m-5 p-2 rounded-xl flex gap-5 items-center h-10">
+<div class="text-white bg-card m-5 p-2 rounded-xl flex gap-5 items-center h-10 shadow-md">
     <h1>motylek's website</h1>
 
     <div class="hidden md:flex gap-6 flex-row">
