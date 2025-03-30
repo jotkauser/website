@@ -1,10 +1,18 @@
 <script lang="ts">
-	import { onMount } from "svelte";
+	import { onDestroy, onMount } from "svelte";
 	import { writable } from "svelte/store";
+	import { userStore } from "$lib/auth/userStore";
+    import type { User } from "@prisma/client";
+
 	export let currentPage: string;
 	const isDropdownOpen = writable(false);
 	let dropdown: HTMLDivElement | null = null;
 	let allowClick = false;
+	let user: User | null;
+	let isLoggedIn = false;
+	const unsubscribe = userStore.subscribe((value) => {
+		user = value;
+	})
 	onMount(() => {
 		const handleClickOutside = (event: PointerEvent) => {
 			if (dropdown && !dropdown.contains(event.target as Node)) {
@@ -16,6 +24,8 @@
 			document.removeEventListener("pointerdown", handleClickOutside);
 		};
 	});
+
+	onDestroy(unsubscribe);
 
 	function toggleDropdown() {
 		if (allowClick) return;
@@ -37,8 +47,13 @@
         <a href="/cat" class:selected={currentPage === 'cat'}>Meow</a>
     </div>
 
-    <div class="ml-auto mr-1 hidden md:block">
-        <a href="/login" class:selected={currentPage === 'login'}>Login</a>
+    <div class="ml-auto mr-1 hidden md:flex flex-row gap-5">
+        {#if user}
+			<p>{user?.username}</p>
+			<a href="/logout" class:selected={currentPage === 'logout'}>Logout</a>
+		{:else}
+			<a href="/login" class:selected={currentPage === 'login'}>Login</a>
+		{/if}
     </div>
 
     <div class="md:hidden ml-auto relative" bind:this={dropdown}>
@@ -52,7 +67,11 @@
 				<a href="/projects" class="block px-4 py-2">Projects</a>
 				<a href="/blog" class="block px-4 py-2">Pseudoblog</a>
                 <a href="/cat" class="block px-4 py-2">Meow</a>
-                <a href="/login" class="block px-4 py-2">Login</a>
+				{#if user}
+					<a class="block px-4 py-2" href="/logout" class:selected={currentPage === 'logout'}>Logout</a>
+				{:else}
+					<a class="block px-4 py-2" href="/login" class:selected={currentPage === 'login'}>Login</a>
+				{/if}
             </div>
         {/if}
     </div>
