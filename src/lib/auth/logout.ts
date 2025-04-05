@@ -9,6 +9,7 @@ export default async function logout(cookies: Cookies) {
 			token
 		}
 	})
+	userStore.set(null);
 	cookies.delete("token", {
 		path: "/",
 		httpOnly: true,

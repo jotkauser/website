@@ -9,7 +9,6 @@
 	let dropdown: HTMLDivElement | null = null;
 	let allowClick = false;
 	let user: User | null;
-	let isLoggedIn = false;
 	const unsubscribe = userStore.subscribe((value) => {
 		user = value;
 	})
@@ -19,6 +18,7 @@
 				isDropdownOpen.set(false);
 			}
 		};
+		console.log(user)
 		document.addEventListener("pointerdown", handleClickOutside);
 		return () => {
 			document.removeEventListener("pointerdown", handleClickOutside);
