@@ -5,3 +5,8 @@
 </script>
 
 <NavBar currentPage="cat" />
+
+<div class="flex flex-col justify-center bg-card p-4 md:p-10 rounded-xl mx-5 sm:mx-auto max-w-3xl md:w-170 gap-2">
+	<header>meow</header>
+	<p>soon</p>
+</div>
