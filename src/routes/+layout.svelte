@@ -8,5 +8,6 @@
 </script>
 <svelte:head>
 	<title>{$title} - motylek's website</title>
+	<meta name="description" content="motylek's website as the title suggests" />
 </svelte:head>
 {@render children()}
