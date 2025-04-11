@@ -1,0 +1,35 @@
+services:
+  website:
+    build: .
+    ports:
+      - "9996:4173"
+    env_file:
+      - .env
+    networks:
+      - global_network
+      - website_network
+    depends_on:
+      - website_db
+  
+  website_db:
+    image: mysql:8.0
+    ports:
+      - "9995:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_DATABASE: website
+      MYSQL_USER: website
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    networks:
+      - global_network
+      - website_network
+    volumes:
+      - website_db_data:/var/lib/mysql
+
+networks:
+  website_network:
+  global_network:
+    external: true
+
+volumes:
+  website_db_data:
