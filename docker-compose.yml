@@ -2,7 +2,7 @@ services:
   website:
     build: .
     ports:
-      - "9996:4173"
+      - "9996:3000"
     env_file:
       - .env
     networks:

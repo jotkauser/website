@@ -5,5 +5,5 @@ COPY . .
 RUN pnpm install --frozen-lockfile
 RUN npx prisma generate
 RUN npm run build
-EXPOSE 4173
-CMD npx prisma migrate deploy && pnpm preview --host
+EXPOSE 3000
+CMD npx prisma migrate deploy && pnpm start
