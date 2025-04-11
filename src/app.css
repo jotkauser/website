@@ -20,12 +20,12 @@ body {
 }
 
 a:hover {
-	color: #4c5052;
-	transition: all 0.2s ease-in-out;
+	color: #babfc2;
+	transition: all 0.1s ease-in-out;
 }
 
 a {
-	transition: all 0.2s ease-in-out;
+	transition: all 0.1s ease-in-out;
 }
 
 header {
