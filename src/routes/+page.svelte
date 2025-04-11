@@ -22,7 +22,7 @@
 
 	<div class="flex flex-col justify-center bg-card p-4 md:p-10 rounded-xl mx-5 sm:mx-auto max-w-3xl text-white md:w-170">
 		<h1>what i'm supposed to put here?</h1>
-		<h1>idk, check out my <a href="/projects" class="underline">projects</a> or <a href="/blog" class="underline">pseudoblog</a> posts</h1>
+		<h1>idk, check out my <a href="/projects" class="underline">projects</a> <!--or <a href="/blog" class="underline">pseudoblog</a> posts --> </h1>
 		<h1>check out my cat photos <a href="/cat" class="underline">here</a></h1>
 		<h1>or check out my <a href="/about" class="underline">about me</a></h1>
 	</div>

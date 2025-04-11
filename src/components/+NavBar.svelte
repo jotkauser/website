@@ -43,18 +43,18 @@
         <a href="/" class:selected={currentPage === 'home'}>Home</a>
         <a href="/about" class:selected={currentPage === 'about'}>About me</a>
         <a href="/projects" class:selected={currentPage === 'projects'}>Projects</a>
-        <a href="/blog" class:selected={currentPage === 'blog'}>Pseudoblog</a>
+        <!-- <a href="/blog" class:selected={currentPage === 'blog'}>Pseudoblog</a> -->
         <a href="/cat" class:selected={currentPage === 'cat'}>Meow</a>
     </div>
 
-    <div class="ml-auto mr-1 hidden md:flex flex-row gap-5">
+    <!-- <div class="ml-auto mr-1 hidden md:flex flex-row gap-5">
         {#if user}
 			<p>{user?.username}</p>
 			<a href="/logout" class:selected={currentPage === 'logout'}>Logout</a>
 		{:else}
 			<a href="/login" class:selected={currentPage === 'login'}>Login</a>
 		{/if}
-    </div>
+    </div> -->
 
     <div class="md:hidden ml-auto relative" bind:this={dropdown}>
         <button on:click={toggleDropdown} class="p-2">
@@ -65,13 +65,13 @@
                 <a href="/" class="block px-4 py-2">Home</a>
 				<a href="/about" class="block px-4 py-2">About me</a>
 				<a href="/projects" class="block px-4 py-2">Projects</a>
-				<a href="/blog" class="block px-4 py-2">Pseudoblog</a>
+				<!-- <a href="/blog" class="block px-4 py-2">Pseudoblog</a> -->
                 <a href="/cat" class="block px-4 py-2">Meow</a>
-				{#if user}
+				<!-- {#if user}
 					<a class="block px-4 py-2" href="/logout" class:selected={currentPage === 'logout'}>Logout</a>
 				{:else}
 					<a class="block px-4 py-2" href="/login" class:selected={currentPage === 'login'}>Login</a>
-				{/if}
+				{/if} -->
             </div>
         {/if}
     </div>
